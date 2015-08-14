@@ -1,5 +1,9 @@
 $(document).ready(function(){
 	init_grid();
+	$('.square').on("mouseenter", function(){
+		$(this).css("background-color", "red");
+		console.log(this + "has been colorized");
+	});
 });
 
 var init_grid = function(){
@@ -12,4 +16,3 @@ var init_grid = function(){
 	}
 	console.log("grid has been initialized");
 };
-
