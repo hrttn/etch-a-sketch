@@ -1,16 +1,9 @@
 .grid{
 	margin: auto;
+	height:960px;
+	width: 960px;
 }
 
 .line{
 	display: inline-block;
-}
-
-.square{
-	height = 20px;
-	width = 20px;
-}
-
-.colorized{
-	background-color: red;
 }

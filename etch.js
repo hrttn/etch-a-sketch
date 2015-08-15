@@ -1,18 +1,20 @@
 $(document).ready(function(){
 	create_grid(16);
-
 });
 
 
 
 var create_grid = function(max){
+	var squareSize = 960/max;
 	for(var i = 0; i < max; i++){
 		$(".grid").append("<div id='line" + i + "' class='line'></line>");
 		
 		for(var j=0; j < max; j++){
-			$("#line" + i).append("<div id='square" + i + "_" + j + "' class='square'>"+ i + "-" + j + "</div>");
+			$("#line" + i).append("<div id='square" + i + "_" + j + "' class='square'></div>");
 		}
 	}
+	$(".square").css("height", squareSize + "px");
+	$(".square").css("width", squareSize + "px");
 	console.log(max + "x" + max + "grid has been created");
 };
 
