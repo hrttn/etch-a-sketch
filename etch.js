@@ -2,8 +2,6 @@ $(document).ready(function(){
 	create_grid(16);
 });
 
-
-
 var create_grid = function(max){
 	var squareSize = 960/max;
 	for(var i = 0; i < max; i++){
